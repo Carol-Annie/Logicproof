@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+ \usepackage{logicproof}
+
+\title{Dedução natural}
+
+\begin{document}
+
+\maketitle
+
+\section{Logicproof}
+$p \to q \vdash \lnot p \lor q $ 
+
+
+\begin{logicproof}{2}
+    p\to q & premise \label{1}\\ 
+    p \lor \lnot p & LTE \label{2}\\
+    \begin{subproof}
+        p & assumption \label{3}\\
+        q & $\to\mathrm{i}$,\ref{3}, \ref{1} \label{4}\\
+     \lnot p \lor q & $\lor\mathrm{i}_2$, \ref{4} \label{5}
+    \end{subproof}
+    \begin{subproof}
+        \lnot p & assumption \label{6}\\
+        \lnot p \lor q & $\lor\mathrm{i}_1$, \ref{6} \label{7}
+    \end{subproof}
+    \lnot p \lor q & $\lor$e, \ref{2}--\ref{4}, \ref{5}--\ref{6}
+\end{logicproof}
+
+
+\end{document}
