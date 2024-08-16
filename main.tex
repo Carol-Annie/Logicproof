@@ -9,22 +9,19 @@
 \maketitle
 
 \section{Logicproof}
-$p \to q \vdash \lnot p \lor q $ 
+$p \to q , p \to \lnot q\vdash \lnot p$ 
 
 
 \begin{logicproof}{2}
     p\to q & premise \label{1}\\ 
-    p \lor \lnot p & LTE \label{2}\\
+    p \lor \lnot q & premise \label{2}\\
     \begin{subproof}
         p & assumption \label{3}\\
-        q & $\to\mathrm{i}$,\ref{3}, \ref{1} \label{4}\\
-     \lnot p \lor q & $\lor\mathrm{i}_2$, \ref{4} \label{5}
+        q & $\to\mathrm{i}$ \ref{3} e \ref{1} \label{4}\\
+        \lnot q & $\to\mathrm{i}$ \ref{3} e \ref{2} \label{5}\\
+        \bot & $\lnot e$ \ref{4} e \ref{5} \label{6}
     \end{subproof}
-    \begin{subproof}
-        \lnot p & assumption \label{6}\\
-        \lnot p \lor q & $\lor\mathrm{i}_1$, \ref{6} \label{7}
-    \end{subproof}
-    \lnot p \lor q & $\lor$e, \ref{2}--\ref{4}, \ref{5}--\ref{6}
+    \lnot p & $ \lnot i$  \ref{3} -- \ref{6}
 \end{logicproof}
 
 
