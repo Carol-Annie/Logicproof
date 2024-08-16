@@ -4,6 +4,6 @@ A biblioteca logicproof foi desenvolvida para auxiliar na criação de provas l�
 * Como utilizar?
 
 
-Para utilzar a biblioteca basta utilizar o comando \usepackage{logicproof}. Para começar a desenvolver a estrutura da prova os comandos \begin{logicproof}{n} \end{logicproof} são empregados. De modo similar as caixas são criadas utilizando \begin{subproof} \end{subcproof}. Os conectivos lógicos são representados por: \lnot para a negação, \lor  para a disjunção, \land para conjunção, \to para o 'então' e \bot para representar a contradição/absurdo. 
+  Para utilzar a biblioteca basta utilizar o comando \usepackage{logicproof}. Para começar a desenvolver a estrutura da prova os comandos \begin{logicproof}{n} \end{logicproof} são   empregados. De modo similar as caixas são criadas utilizando \begin{subproof} \end{subcproof}. Os conectivos lógicos são representados por: \lnot para a negação, \lor  para a disjunção, \land para conjunção, \to para o 'então' e \bot para representar a contradição/absurdo. 
 
-A documentação da biblioteca foi incluída nesse repositório para consulta e maiores detalhes. Um documento e o "código" Latex foram deixados como exemplo da utilização da biblioteca.
+  A documentação da biblioteca foi incluída nesse repositório para consulta e maiores detalhes. Um documento e o "código" Latex foram deixados como exemplo da utilização da biblioteca.
